@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C2E Post Event</title>
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    <style type="text/css">
+        #post
+            {
+                font-family: arial;
+                font-size: 1.1em;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="images/logo2.png" align="left"/><img src="images/logo label.png" align="left"/>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="createAccount.html">Create Account</a></li>
+                <li><a href="searchEvent.html">Search Events</a></li>
+                <li><a href="postEvent.html">Post Event</a></li>
+            </ul>
+        </div>
+        <div id="post">
+            <h1>Post an Event: </h1>
+            <form action="#" method="post">
+                <table border="0">
+                    <tr><td>Event Name: </td><td><input type="text" name="eventName" id="eventName" size="50"/></td></tr>
+                    <tr><td>Event Date:</td><td><input type="date" name="eventDate"  id="eventDate" min="2017-05-07"/></td></tr>
+                    <tr><td>Start Time:</td><td><input type="time" name="startTime" id="startTime"/></td></tr>
+                    <tr><td>Address: </td><td><input type="text" name="address" id="address" size="50"/></td></tr>
+                    <tr><td>City: </td><td><input type="text" name="city" id="city" size="50"/></td></tr>
+                    <tr><td>Zip Code:</td><td><input type="text" name="eventZip" id="eventZip" size="5"/></td></tr>
+                    <tr><td>Description: </td><td><textarea rows="7" cols="50" name="description" id="description"></textarea></td></tr>
+                    <tr><td><input type="submit" value="Submit"/></td></tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

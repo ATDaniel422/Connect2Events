@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C2E Search Events</title>
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    <style type="text/css">
+        #search
+            {
+                font-family: arial;
+                font-size: 1.1em;
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="images/logo2.png" align="left"/><img src="images/logo label.png" align="left"/>
+          
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="createAccount.html">Create Account</a></li>      
+                <li><a href="searchEvent.html">Search Events</a></li>
+                <li><a href="postEvent.html">Post Event</a></li>
+            </ul>                                     
+        </div>
+        <div id="search">
+            <h1>Search for an Event:</h1>
+            <form action="eventList.html" method="post">
+                <table border="0">
+                    <tr><td>Event type</td><td>Zip Code</td></tr>
+                    <tr><td><select name="type">
+                            <option value="art">Arts Festival</option>
+                            <option value="concert">Concert</option>
+                            <option value="farmer's market">Farmer's Market</option>
+                            <option value="food/drink">Food/Drink Festival</option>
+                            <option value="fundraiser">Fundraiser</option>
+                            <option value="political">Political Event</option>
+                            <option value="sports">Sports/Recreation</option> 
+                        </select></td>
+                    <td><input type="text" name="zip" id="zip" size="5"/></td></tr>
+                    <tr><td><input type="submit" value="Search"/></td></tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
